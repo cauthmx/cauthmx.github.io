@@ -6330,7 +6330,9 @@ a.text-dark:hover, a.text-dark:focus {
   justify-content: center; }
 
 .navbar-brand {
-  font-family: 'Muli', sans-serif; }
+  font-family: 'Muli', sans-serif;
+  font-size: 14px;
+}
 
 .navbar {
   height: 45px; }
@@ -6364,9 +6366,13 @@ body {
 .cauth-customer {
   background-color: #ffffff;
   width: 100%;
-  margin-top: 5em;
-  padding-bottom: 3em;
-  flex: 1; }
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  flex: 1;
+  height: 100vh;
+}
 
 .footer {
   background-color: #e6e6e6;
@@ -6387,6 +6393,45 @@ body {
   margin: 0 2em; }
 
 .business-image {
+  background-color: red;
   max-height: 15em;
   max-width: 15em;
-  margin-bottom: 2em; }
+  margin-bottom: 2em;
+  border-radius: 8px;
+  box-shadow: 0 0 10px rgba(0,0,0,.3);
+}
+
+.feedback-button {
+  height: 40px;
+  background: linear-gradient(#42a1ec, #0070c9);
+  border-radius: 8px;
+  margin-top: 15px;
+  color: white;
+  border: none;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  font-size: 18px;
+  width: 280px;
+}
+
+.feedback-button:hover {
+  background: linear-gradient(#63b1ed, #0070c9);
+}
+
+.styled-link:hover{
+  text-decoration: none;
+  color: white;
+}
+
+.feedback-icon { 
+  width: 25px;
+  height: 25px;
+  fill: white;
+  margin-right: 8px;
+}
+
+.styled-nav {
+  font-size: 10px;
+}
